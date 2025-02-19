@@ -9,7 +9,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "prepare": "npx husky install",
+    "prepare": "if [ \"$VERCEL\" != \"1\" ]; then husky install; fi",
     "preview": "vite preview",
     "release": "standard-version"
   },
