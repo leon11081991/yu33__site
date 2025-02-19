@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components {
+  .heading-1 {
+    @apply text-h1 tracking-h1 font-medium;
+  }
+  .heading-2 {
+    @apply text-h2 tracking-h2;
+  }
+  .heading-3 {
+    @apply text-h3 tracking-h3;
+  }
+  .heading-4 {
+    @apply text-h4 tracking-h4 font-medium;
+  }
+} 
+
+// 1. 配置
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+// 2. 第三方庫
+
+// 3. 基礎樣式
+@import 'reset';
+
+// 4. 布局
+@import 'layout/header';
+@import 'layout/footer';
+
+// 5. 組件
+// @import 'components/buttons';
+@import 'components/project-card';
+
+// 6. 頁面
+// @import 'pages/home';
+
+// 7. 主題
+// @import 'themes/theme';
+
+// 4. 全域樣式
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+}
+
+.page-main{
+  margin: 0 auto;
+  min-height: calc(100dvh - $header-height - $footer-height);
+  // padding-inline: 1.5rem;
+  width: 72.9%;
+  // max-width: 1050px;
+}
+
+.project-list {
+  @apply grid grid-cols-1 lg:grid-cols-2 gap-6;
+}
