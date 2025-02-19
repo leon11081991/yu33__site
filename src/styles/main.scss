@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @layer components {
   .heading-1 {
     @apply text-h1 tracking-h1 font-medium;
@@ -20,27 +18,27 @@
 } 
 
 // 1. 配置
-@import 'abstracts/variables';
-@import 'abstracts/mixins';
+// @use 'abstracts/variables';
+// @use 'abstracts/mixins';
 
 // 2. 第三方庫
 
 // 3. 基礎樣式
-@import 'reset';
+// @use 'reset';
 
 // 4. 布局
-@import 'layout/header';
-@import 'layout/footer';
+// @use 'layout/header';
+// @use 'layout/footer';
 
 // 5. 組件
-// @import 'components/buttons';
-@import 'components/project-card';
+// @use 'components/buttons';
+// @use 'components/project-card';
 
 // 6. 頁面
-// @import 'pages/home';
+// @use 'pages/home';
 
 // 7. 主題
-// @import 'themes/theme';
+// @use 'themes/theme';
 
 // 4. 全域樣式
 

@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 
+import '@/styles/layout/header.scss'
 export default function Header({ appName }) {
   return (
     <header className='header'>
