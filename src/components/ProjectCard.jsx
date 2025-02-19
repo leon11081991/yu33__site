@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import BlurLazyImage from '@/components/BlurLazyImage'
 
+import '@/styles/components/project-card.scss'
 export default function ProjectCard({ path, imgSrc, imgPlaceholder, imgAlt, title, desc }) {
   return (
     <li className='project-card'>

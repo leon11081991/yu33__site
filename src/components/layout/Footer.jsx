@@ -1,6 +1,8 @@
 import InstagramIcon from '@/assets/instagramIcon.svg'
 import EmailIcon from '@/assets/emailIcon.svg'
 
+import '@/styles/layout/footer.scss'
+
 const AUTHOR = 'Lillian Lin'
 const YEAR = new Date().getFullYear()
 const SOCIALS = [
