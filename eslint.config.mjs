@@ -11,7 +11,10 @@ export default [
 
   {
     files: ['**/*.{js,mjs,cjs,jsx}'],
-    languageOptions: { globals: globals.browser }
+    languageOptions: { globals: globals.browser },
+    rules: {
+      'react/react-in-jsx-scope': 'off'
+    }
   }
 
   // pluginPrettier.configs.recommended, // Prettier integration
