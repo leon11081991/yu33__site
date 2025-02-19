@@ -1,0 +1,22 @@
+// 全域
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+}
+
+.page-main {
+  margin: 0 auto;
+  min-height: calc(100dvh - $header-height - $footer-height);
+  // padding-inline: 1.5rem;
+  width: 72.9%;
+  // max-width: 1050px;
+}
+
+.project-list {
+  @apply grid grid-cols-1 lg:grid-cols-2 gap-6;
+}

@@ -1,3 +1,7 @@
+@forward '@/styles/abstracts/mixins';
+@forward "@/styles/abstracts/variables";
+@forward "@/styles/reset";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,48 +21,5 @@
   }
 } 
 
-// 1. 配置
-// @use 'abstracts/variables';
-// @use 'abstracts/mixins';
 
-// 2. 第三方庫
 
-// 3. 基礎樣式
-// @use 'reset';
-
-// 4. 布局
-// @use 'layout/header';
-// @use 'layout/footer';
-
-// 5. 組件
-// @use 'components/buttons';
-// @use 'components/project-card';
-
-// 6. 頁面
-// @use 'pages/home';
-
-// 7. 主題
-// @use 'themes/theme';
-
-// 4. 全域樣式
-
-html {
-  font-size: 16px;
-}
-
-body {
-  background-color: $background-color;
-  color: $text-color;
-}
-
-.page-main{
-  margin: 0 auto;
-  min-height: calc(100dvh - $header-height - $footer-height);
-  // padding-inline: 1.5rem;
-  width: 72.9%;
-  // max-width: 1050px;
-}
-
-.project-list {
-  @apply grid grid-cols-1 lg:grid-cols-2 gap-6;
-}
