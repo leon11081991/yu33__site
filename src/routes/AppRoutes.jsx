@@ -4,7 +4,7 @@ import DefaultLayout from '@/layouts/DefaultLayout'
 
 // import Home from '@/views/Home'
 const Home = lazy(() => import('@/views/Home'))
-const About = lazy(() => import('@/views/about'))
+const About = lazy(() => import('@/views/About'))
 
 const router = createBrowserRouter([
   {
