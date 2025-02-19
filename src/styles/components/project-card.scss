@@ -1,0 +1,57 @@
+.project-card {
+  @apply gap-6 cursor-pointer;
+
+  &-container {
+    @apply flex flex-col gap-4;
+  }
+  .project-cover {
+    @apply flex-1 rounded-sm overflow-hidden;
+    
+    .blur-load {
+      @apply relative bg-cover bg-center blur-md;
+
+      // &::before {
+      //   content: '';
+      //   background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%);
+      //   background-position: -400px 0;
+      //   background-repeat: no-repeat;
+      //   animation: loading 1.5s infinite;
+      //   @apply absolute inset-0;
+      // }
+
+      &.loaded {
+        @apply blur-0;
+
+        // &::before {
+        //   content: none;
+        // }
+
+        img {
+          @apply opacity-100;
+        }
+      }
+
+      img {
+        @apply w-full block object-cover object-center opacity-0;
+        transition: opacity 0.3s ease-in-out;
+        aspect-ratio: 713 / 476;
+      }
+    }
+
+    
+  }
+
+  .project-title {
+    @apply text-xl font-medium;
+  }
+
+  .project-desc {
+    @apply heading-4 text-gray-05;
+  }
+}
+
+// @keyframes loading {
+//   to {
+//     background-position: 400px 0;
+//   }
+// }
