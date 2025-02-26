@@ -1,5 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-// import remToPx from 'tailwindcss-rem-to-px';
 
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
@@ -12,19 +11,24 @@ export default {
     },
     extend: {
       colors: {
+        primary: {
+          '01': '#1A1A1A',
+          '02': '#FFFFFF'
+        },
         gray: {
           '01': '#2C2C2C',
-          '02': 'rgba(#FFFFFF, 0.2)',
-          '03': 'rgba(#FFFFFF, 0.5)',
-          '04': 'rgba(#FFFFFF, 0.7)',
+          '02': 'rgba(255, 255, 255, 0.2)',
+          '03': 'rgba(255, 255, 255, 0.5)',
+          '04': 'rgba(255, 255, 255, 0.7)',
           '05': '#9A9A9A'
         }
       },
       fontSize: {
         h1: ['1.75rem', '45px'],
-        h2: ['1.125rem', '2rem'],
-        h3: ['1rem', '1rem'],
-        h4: ['1rem', '2rem']
+        h2: ['1rem', '1.5rem'],
+        h3: ['.875rem', '1rem'],
+        h4: ['.875rem', '2rem'],
+        p1: ['.875rem', '1.75rem']
       },
       letterSpacing: {
         h1: '1px',
@@ -34,7 +38,5 @@ export default {
       }
     }
   },
-  plugins: [
-    // remToPx()
-  ]
+  plugins: []
 }
