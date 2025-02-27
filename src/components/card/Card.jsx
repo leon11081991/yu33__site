@@ -28,7 +28,7 @@ const Card = ({ path, imgSrc, imgPlaceholder, imgAlt, title, desc }) => {
           >
             {title}
           </h3>
-          <p className={classes.cardDesc}>{desc}</p>
+          <p className={`${classes.cardDesc} heading-4`}>{desc}</p>
         </div>
       </Link>
     </li>
