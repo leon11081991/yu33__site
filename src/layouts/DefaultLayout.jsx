@@ -9,9 +9,7 @@ const DefaultLayout = () => {
   return (
     <>
       <Header appName={APP_NAME} />
-      <div className='page-main'>
-        <Outlet />
-      </div>
+      <Outlet />
       <Footer />
     </>
   )

@@ -2,9 +2,9 @@ import { lazy } from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import DefaultLayout from '@/layouts/DefaultLayout'
 
-// import Home from '@/views/Home'
-const Home = lazy(() => import('@/views/Home'))
+import Home from '@/views/Home'
 const About = lazy(() => import('@/views/About'))
+const Project = lazy(() => import('@/views/Project'))
 
 const router = createBrowserRouter([
   {
@@ -18,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: 'about',
         element: <About />
+      },
+      {
+        path: 'project/:projectName',
+        element: <Project />
       }
     ]
   }

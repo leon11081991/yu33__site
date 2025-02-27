@@ -6,6 +6,34 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --header-height: 5rem;
+    --footer-height: 5rem;
+  }
+}
+
+@layer components {
+  .content {
+    @apply grid grid-cols-12 gap-6;
+    margin: 0 auto;
+    // min-height: calc(100dvh - $header-height - $footer-height);
+    padding-inline: 44px;
+
+    // width: 75.5%;
+    // max-width: 1450px;
+    &-container {
+      @apply col-start-2 col-end-[-2];
+    }
+  }
+}
+
+@layer component {
+  .two-cols-container {
+    @apply grid grid-cols-2 gap-6 grid-cols-[3fr_7fr];
+  }
+}
+
 @layer components {
   .heading-1 {
     @apply text-h1 tracking-h1 font-medium;

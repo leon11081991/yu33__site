@@ -1,9 +1,6 @@
-import ProjectList from '@/components/ProjectList'
+import ContentContainer from '@/layouts/ContentContainer'
+import CardList from '@/components/card/CardList'
 
 export default function Home() {
-  return (
-    <div className='page-index'>
-      <ProjectList />
-    </div>
-  )
+  return <ContentContainer content={() => <CardList />} />
 }
