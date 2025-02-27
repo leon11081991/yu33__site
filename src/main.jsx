@@ -4,7 +4,8 @@ import { createRoot } from 'react-dom/client'
 import '@/styles/main.scss'
 import App from '@/App.jsx'
 
-createRoot(document.getElementById('root')).render(
+const root = createRoot(document.getElementById('root'))
+root.render(
   <StrictMode>
     <App />
   </StrictMode>

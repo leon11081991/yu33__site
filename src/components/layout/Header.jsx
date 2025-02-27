@@ -1,15 +1,16 @@
 import PropTypes from 'prop-types'
 
-import '@/styles/layout/header.scss'
+import classes from '@styles/layout/Header.module.scss'
+
 export default function Header({ appName }) {
   return (
-    <header className='header'>
-      <div className='logo'>
+    <header className={classes.header}>
+      <div className={classes.logo}>
         <h1>{appName}</h1>
       </div>
 
-      <div className='hamburger'>
-        <div className='hamburger-container'>
+      <div className={classes.hamburger}>
+        <div className={classes.hamburgerContainer}>
           <span></span>
           <span></span>
         </div>

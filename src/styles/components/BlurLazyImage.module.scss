@@ -1,0 +1,17 @@
+.blur-load {
+  @apply relative bg-cover bg-center blur-md;
+
+  img {
+    @apply w-full block object-cover object-center opacity-0;
+    transition: opacity 0.3s ease-in-out;
+    // aspect-ratio: 713 / 476;
+  }
+}
+
+.loaded {
+  @apply blur-0;
+
+  img {
+    @apply opacity-100;
+  }
+}

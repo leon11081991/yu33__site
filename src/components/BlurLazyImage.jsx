@@ -1,6 +1,9 @@
 import { useEffect, useRef, useState } from 'react'
 import PropTypes from 'prop-types'
-const BlurLazyImage = ({ src, alt, placeholder }) => {
+
+import classes from '@styles/components/BlurLazyImage.module.scss'
+
+const BlurLazyImage = ({ src, alt, placeholder, width = 800, height = 500 }) => {
   const [isLoaded, setIsLoaded] = useState(false)
   const imgRef = useRef(null)
 
@@ -25,15 +28,16 @@ const BlurLazyImage = ({ src, alt, placeholder }) => {
 
   return (
     <div
-      className={`blur-load ${isLoaded ? 'loaded' : ''}`}
+      className={`${classes.blurLoad} ${isLoaded ? classes.loaded : ''}`}
       style={{ backgroundImage: `url(${placeholder})` }}
     >
       <img
         ref={imgRef}
         loading='lazy'
-        className='img'
+        className={classes.img}
         src={src}
         alt={alt}
+        style={{ aspectRatio: `${width}/${height}` }}
       />
     </div>
   )
@@ -42,7 +46,9 @@ const BlurLazyImage = ({ src, alt, placeholder }) => {
 BlurLazyImage.propTypes = {
   src: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
-  placeholder: PropTypes.string.isRequired
+  placeholder: PropTypes.string.isRequired,
+  width: PropTypes.number,
+  height: PropTypes.number
 }
 
 export default BlurLazyImage
