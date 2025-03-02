@@ -1,5 +1,4 @@
-// 全域
-
+// 全域樣式
 html {
   font-size: 16px;
 }
@@ -8,19 +7,6 @@ body {
   background-color: $background-color;
   color: $text-color;
 }
-
-// .content {
-//   @apply grid grid-cols-12 gap-6;
-//   margin: 0 auto;
-//   min-height: calc(100dvh - $header-height - $footer-height);
-//   padding-inline: 44px;
-//   // width: 75.5%;
-//   // max-width: 1450px;
-//   &-container {
-//     grid-column-start: 2;
-//     grid-column-end: -2;
-//   }
-// }
 
 .section-content {
   // @apply border-b-[1px] border-gray-03;

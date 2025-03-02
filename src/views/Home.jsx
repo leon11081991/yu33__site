@@ -1,5 +1,5 @@
 import ContentContainer from '@/layouts/ContentContainer'
-import Card from '@/components/card/Card'
+import Card from '@/components/ui/card/Card'
 
 import { PROJECT_BRIEF_LIST } from '@/data/project-brief-data'
 

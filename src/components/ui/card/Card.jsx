@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
-import BlurLazyImage from '@/components/BlurLazyImage'
+import BlurLazyImage from '@/components/ui/image/BlurLazyImage'
 
-import classes from '@styles/components/card/Card.module.scss'
+import classes from '@/styles/components/card/Card.module.scss'
 
 const Card = ({ name, title, category, cover }) => {
   return (

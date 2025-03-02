@@ -1,7 +1,7 @@
-import InstagramIcon from '@/assets/instagramIcon.svg'
-import EmailIcon from '@/assets/emailIcon.svg'
+import InstagramIcon from '@/assets/icons/instagramIcon.svg'
+import EmailIcon from '@/assets/icons/emailIcon.svg'
 
-import classes from '@styles/layout/Footer.module.scss'
+import classes from '@/styles/layout/Footer.module.scss'
 
 const AUTHOR = 'Lillian Lin'
 const YEAR = new Date().getFullYear()

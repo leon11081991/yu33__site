@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import PropTypes from 'prop-types'
 
-import classes from '@styles/components/BlurLazyImage.module.scss'
+import classes from '@/styles/components/BlurLazyImage.module.scss'
 
 const BlurLazyImage = ({ src, alt, placeholder, width = 800, height = 500 }) => {
   const [isLoaded, setIsLoaded] = useState(false)

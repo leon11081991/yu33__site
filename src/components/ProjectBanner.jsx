@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
-import BlurLazyImage from '@components/BlurLazyImage'
+import BlurLazyImage from '@/components/ui/image/BlurLazyImage'
 
-import styles from '@styles/components/ProjectBanner.module.scss'
+import styles from '@/styles/components/ProjectBanner.module.scss'
 
 const ProjectBanner = ({ src, alt, placeholder, width, height }) => {
   return (
