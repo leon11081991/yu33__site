@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import ArrowRight from '@/assets/icons/ArrowRight.svg'
+import ArrowRight from '@/assets/icons/arrowRight.svg'
 
 const MandalaProcessChart = ({ information }) => {
   return (
