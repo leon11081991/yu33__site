@@ -1,3 +1,5 @@
+import KolProcessImg from '@/assets/images/kol/kol-process.svg'
+
 import PingoSitemapImg from '@/assets/images/pingo/pingo-sitemap.svg'
 
 import KaiProcessImg from '@/assets/images/kai/kai-process.svg'
@@ -15,6 +17,63 @@ import MandalaDemo3Img from '@assets/images/mandala/mandala-demo-3.png'
 import MandalaDemo4Img from '@assets/images/mandala/mandala-demo-4.png'
 
 export const PROJECT_DATA = {
+  kol: {
+    info: {
+      title: 'KOL Master 網紅媒合平台',
+      information: [
+        {
+          label: '專案時間',
+          content: '2020'
+        },
+        {
+          label: '負責項目',
+          content: '競品分析、用戶訪談、UX研究、UX設計、UI介面設計、Design Guideline產出。'
+        },
+        {
+          label: '類型項目',
+          content: 'B2B Saas'
+        },
+        {
+          label: '團隊成員',
+          content: 'Lillian Lin (Yu.3_)'
+        },
+        {
+          label: '擔任角色',
+          content: 'UI/UX Designer'
+        }
+      ]
+    },
+    about: {
+      title: '關於專案 / About Project',
+      information: [
+        {
+          label: '專案背景',
+          content:
+            '在這資訊爆炸的時代，<span class="text-secondary-03">KOL已成為數位行銷的最佳推手，也就是「網紅行銷」</span>。由於越來越多品牌有網紅行銷的需求，為了替廣告主創造個性化服務、使網紅商業合作更加迅速流暢，因此有了網紅媒合平台的誕生。'
+        },
+        {
+          label: '產品目標',
+          content:
+            '打造一個數據驅動、高效匹配、簡單易用的KOL行銷平台，讓廣告主能夠輕鬆找到適合的KOL，並透過產品提升行銷成效，降低試錯成本。（成為廣告主與KOL中間的協調者，起到媒合、協調的作用，進行雙向媒合的商業行為。)'
+        },
+        {
+          label: '設計的挑戰',
+          content:
+            '目前市場上已經有許多KOL平台，如KOL Radar、Influencer圈圈科技、台灣KOL等，<span class="text-secondary-03">如何做出差異化？並且從現有的市場找出可切入的機會點？一人設計師如何產出0到1的產品？</span>'
+        }
+      ]
+    },
+    process: {
+      title: '專案流程 / Project Process',
+      image: {
+        src: KolProcessImg,
+        alt: 'KOL Master 專案流程',
+        placeholder: KolProcessImg,
+        width: 1122,
+        height: 440
+      }
+    }
+  },
   pingo: {
     info: {
       title: 'Pingo 美食搜集神器',
@@ -53,6 +112,77 @@ export const PROJECT_DATA = {
           label: '期望目標',
           content:
             '這一次Redesign的重點希望可以<span class="text-secondary-02">優化現階段的使用流程＆產品體驗</span>，讓使用者在操作上更直覺並符合使用者的需求，提升用戶的黏著度與滿意度。'
+        }
+      ]
+    },
+    backgroundResearch: {
+      title: '背景研究 / Background Research',
+      dataSources: [
+        {
+          title: 'Z世代透過哪些渠道搜尋餐廳',
+          source: 'Tech Orange 科技報橘',
+          chartSources: [
+            {
+              id: 1,
+              type: 'Instagram',
+              percentage: 40,
+              showPercentage: true,
+              isHighlight: true
+            },
+            {
+              id: 2,
+              type: 'Google',
+              percentage: 35,
+              showPercentage: false,
+              isHighlight: false
+            },
+            {
+              id: 3,
+              type: 'Other',
+              percentage: 25,
+              showPercentage: false,
+              isHighlight: false
+            }
+          ]
+        },
+        {
+          title: '透過Instagram關注內容',
+          source: '動腦Brain',
+          chartSources: [
+            {
+              id: 1,
+              type: '美食/部落客',
+              percentage: 55,
+              showPercentage: true,
+              isHighlight: true
+            },
+            {
+              id: 2,
+              type: '旅遊/景點',
+              percentage: 53,
+              showPercentage: true,
+              isHighlight: true
+            },
+            {
+              id: 3,
+              type: '時尚/美妝',
+              percentage: 42,
+              showPercentage: true,
+              isHighlight: false
+            }
+          ]
+        }
+      ],
+      information: [
+        {
+          label: '研究洞察',
+          content:
+            '隨著社群平台蓬勃發展，消費者獲取美食資訊的管道也有所轉變，從過去依賴電視、報章雜誌或是搜尋引擎，現在已逐漸轉移到美食內容多元豐富的社群平台上，根據數據顯示<span class="text-secondary-02">超過40％的Z世代的年輕人</span>會透過Instagram搜尋美食、景點。'
+        },
+        {
+          label: null,
+          content:
+            '之所以如此是因為用戶普遍<span class="text-secondary-02">對「視覺形式豐富」的搜索和發現更感興趣</span>，也因此帶動美食搜尋社群化的趨勢。此外使用Instagram的用戶族群除了關注美食外，<span class="text-secondary-02">旅遊/景點也是用戶熱門關注的內容。</span>'
         }
       ]
     },
@@ -140,7 +270,7 @@ export const PROJECT_DATA = {
     },
     process: {
       title: '專案流程 / Project Process',
-      picture: {
+      image: {
         src: KaiProcessImg,
         alt: '凱奧專案流程',
         placeholder: KaiProcessImg,

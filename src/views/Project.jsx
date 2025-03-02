@@ -1,9 +1,10 @@
 import { useParams } from 'react-router-dom'
 
 import ProjectBanner from '@/components/ProjectBanner'
+import KolProjectPage from '@/components/pages/KolProjectPage'
+import PingoProjectPage from '@/components/pages/PingoProjectPage'
 import KaiProjectPage from '@/components/pages/KaiProjectPage'
 import MandalaProjectPage from '@/components/pages/MandalaProjectPage'
-import PingoProjectPage from '@/components/pages/PingoProjectPage'
 import ContactMe from '@/components/ContactMe'
 
 import { BANNER_DATA } from '@/data/banner-data'
@@ -11,9 +12,10 @@ import { PROJECT_DATA } from '@/data/project-data'
 
 // 定義可用的頁面元件
 const PAGE_COMPONENTS = {
+  kol: KolProjectPage,
+  pingo: PingoProjectPage,
   kai: KaiProjectPage,
-  mandala: MandalaProjectPage,
-  pingo: PingoProjectPage
+  mandala: MandalaProjectPage
 }
 
 // 定義 Banner 圖片尺寸
