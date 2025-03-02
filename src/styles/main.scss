@@ -30,7 +30,7 @@
 
 @layer components {
   .two-cols-container {
-    @apply grid gap-6 grid-cols-[3fr_7fr];
+    @apply grid gap-6 grid-cols-1 md:grid-cols-[3fr_7fr];
   }
 }
 
@@ -48,6 +48,5 @@
     @apply text-h4 tracking-h4 font-medium;
   }
 } 
-
 
 

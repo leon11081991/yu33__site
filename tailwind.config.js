@@ -15,6 +15,13 @@ export default {
           '01': '#1A1A1A',
           '02': '#FFFFFF'
         },
+        secondary: {
+          '01': '#00FFB2',
+          '02': '#FFA92D',
+          '03': '#F29D21',
+          '04': '#FF576F',
+          '05': '#237AFC'
+        },
         gray: {
           '01': '#2C2C2C',
           '02': 'rgba(255, 255, 255, 0.2)',
@@ -28,7 +35,8 @@ export default {
         h2: ['1rem', '1.5rem'],
         h3: ['.875rem', '1rem'],
         h4: ['.875rem', '2rem'],
-        p1: ['.875rem', '1.75rem']
+        p1: ['.875rem', '1.75rem'],
+        p2: ['.75rem', '1.125rem']
       },
       letterSpacing: {
         h1: '1px',

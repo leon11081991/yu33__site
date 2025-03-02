@@ -1,17 +1,13 @@
 import PropTypes from 'prop-types'
+import BlurLazyImage from '@/components/ui/image/BlurLazyImage'
 
-import BlurLazyImage from '@components/BlurLazyImage'
-
-const KaiDemo = ({ video, pictures }) => {
+const KaiDemo = ({ pictures }) => {
   return (
     <>
-      <section className='w-full h-dvh bg-gray-01'>
-        <div>{video.test}</div>
-      </section>
-      {pictures.map(picture => {
+      {pictures.map((picture, index) => {
         return (
           <PictureSection
-            key={picture.alt}
+            key={picture.alt + index}
             picture={picture}
           />
         )

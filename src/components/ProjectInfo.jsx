@@ -1,24 +1,15 @@
 import PropTypes from 'prop-types'
-
 import ContentContainer from '@/layouts/ContentContainer'
-import ProjectTitle from '@/components/ProjectTitle'
-import styles from '@styles/components/ListItem.module.scss'
 
 const ProjectInfoContent = ({ title, information }) => (
   <section className='section-content border-b-[1px] border-gray-03'>
-    <ProjectTitle
-      title={title}
-      className={styles.projectTitle}
-    />
+    <h2 className='project-title heading-1'>{title}</h2>
     <div>
       <ul className='two-cols-container'>
         {information.map(item => (
-          <li
-            key={item.label}
-            className={styles.listItem}
-          >
-            <span className={styles.label}>{item.label}</span>
-            <h5 className={styles.content}>{item.content}</h5>
+          <li key={item.label}>
+            <span className='heading-3 text-gray-03'>{item.label}</span>
+            <h5 className='heading-4'>{item.content}</h5>
           </li>
         ))}
       </ul>
