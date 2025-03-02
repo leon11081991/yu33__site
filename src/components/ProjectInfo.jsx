@@ -1,19 +1,19 @@
 import PropTypes from 'prop-types'
 import ContentContainer from '@/layouts/ContentContainer'
+import ItemWithTitle from '@/components/ItemWithTitle'
 
 const ProjectInfoContent = ({ title, information }) => (
   <section className='section-content border-b-[1px] border-gray-03'>
     <h2 className='project-title heading-1'>{title}</h2>
-    <div>
-      <ul className='two-cols-container'>
-        {information.map(item => (
-          <li key={item.label}>
-            <span className='heading-3 text-gray-03'>{item.label}</span>
-            <h5 className='heading-4'>{item.content}</h5>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <ul className='two-cols-container'>
+      {information.map(item => (
+        <ItemWithTitle
+          key={item.label}
+          label={item.label}
+          content={item.content}
+        />
+      ))}
+    </ul>
   </section>
 )
 
