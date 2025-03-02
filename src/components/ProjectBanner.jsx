@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types'
 import BlurLazyImage from '@components/BlurLazyImage'
 
-import classes from '@styles/components/PageBanner.module.scss'
+import styles from '@styles/components/ProjectBanner.module.scss'
 
-const PageBanner = ({ src, alt, placeholder, width, height }) => {
+const ProjectBanner = ({ src, alt, placeholder, width, height }) => {
   return (
-    <div className={classes.pageBanner}>
+    <div className={styles.projectBanner}>
       <BlurLazyImage
         src={src}
         alt={`${alt} Banner`}
@@ -17,7 +17,7 @@ const PageBanner = ({ src, alt, placeholder, width, height }) => {
   )
 }
 
-PageBanner.propTypes = {
+ProjectBanner.propTypes = {
   src: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
   placeholder: PropTypes.string.isRequired,
@@ -25,4 +25,4 @@ PageBanner.propTypes = {
   height: PropTypes.number
 }
 
-export default PageBanner
+export default ProjectBanner
