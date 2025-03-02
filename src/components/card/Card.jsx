@@ -4,19 +4,19 @@ import BlurLazyImage from '@/components/BlurLazyImage'
 
 import classes from '@styles/components/card/Card.module.scss'
 
-const Card = ({ path, imgSrc, imgPlaceholder, imgAlt, title, desc }) => {
+const Card = ({ name, title, category, cover }) => {
   return (
     <li className={classes.card}>
       <Link
-        to={path}
+        to={`/project/${name}`}
         className={classes.cardContainer}
       >
         <div className={classes.cardCover}>
           <BlurLazyImage
             className={classes.cardCoverImg}
-            src={imgSrc}
-            alt={imgAlt}
-            placeholder={imgPlaceholder}
+            src={cover.src}
+            alt={cover.alt}
+            placeholder={cover.placeholderImg}
             width={713}
             height={476}
           />
@@ -28,7 +28,7 @@ const Card = ({ path, imgSrc, imgPlaceholder, imgAlt, title, desc }) => {
           >
             {title}
           </h3>
-          <p className={`${classes.cardDesc} heading-4`}>{desc}</p>
+          <p className={`${classes.cardDesc} heading-4`}>{category}</p>
         </div>
       </Link>
     </li>
@@ -36,12 +36,14 @@ const Card = ({ path, imgSrc, imgPlaceholder, imgAlt, title, desc }) => {
 }
 
 Card.propTypes = {
-  path: PropTypes.string.isRequired,
-  imgSrc: PropTypes.string.isRequired,
-  imgPlaceholder: PropTypes.string.isRequired,
-  imgAlt: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  desc: PropTypes.string.isRequired
+  category: PropTypes.string.isRequired,
+  cover: PropTypes.shape({
+    src: PropTypes.string.isRequired,
+    alt: PropTypes.string,
+    placeholderImg: PropTypes.string.isRequired
+  })
 }
 
 export default Card
