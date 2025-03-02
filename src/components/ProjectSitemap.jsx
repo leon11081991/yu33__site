@@ -34,7 +34,7 @@ ProjectSitemap.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string,
   indicators: PropTypes.array.isRequired,
-  picture: PropTypes.object.shape({
+  picture: PropTypes.shape({
     src: PropTypes.string.isRequired,
     alt: PropTypes.string.isRequired,
     placeholder: PropTypes.string.isRequired,
